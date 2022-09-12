@@ -2,6 +2,8 @@
 
 Example setup for running cron jobs inside docker.
 
+This also contains `python` and `pyodbc` with MS SQL Drivers. Sample script is found in [jobs/odbc.py](jobs/odbc.py).
+
 ## Usage
 
 Build and run
