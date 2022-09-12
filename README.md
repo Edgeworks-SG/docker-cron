@@ -40,5 +40,8 @@ The above will load `crontab.Development` and run [jobs/hello.sh](jobs/hello.sh)
 4. Run image with `SCHEDULER_ENVIRONMENT` defined.
 
    ```bash
-   docker run --rm -e SCHEDULER_ENVIRONMENT='Production' -it cron
+   docker run --rm \
+      -e SCHEDULER_ENVIRONMENT='Production' \
+      --add-host=host.docker.internal:host-gateway \
+      -it cron
    ```
